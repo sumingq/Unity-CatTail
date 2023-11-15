@@ -13,17 +13,13 @@ public class GameManager : MonoBehaviour
     private float surviveTime;
     private bool isGameover;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         surviveTime = 0;
         isGameover = false;
-        //
         gameoverText.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isGameover)
@@ -33,12 +29,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            /*if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene("SampleScene");
-            }*/
-
-            //
             if (Input.GetKeyDown(KeyCode.R) || Input.touchCount > 0)
             {
                 Restart();
@@ -60,6 +50,7 @@ public class GameManager : MonoBehaviour
         }
         recordText.text = "Best Time : " + (int)bestTime;
     }
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
