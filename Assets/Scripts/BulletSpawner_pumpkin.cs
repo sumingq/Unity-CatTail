@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSpawnet_pumpkin : MonoBehaviour
+public class BulletSpawner_pumpkin : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public float spawnRateMin = 10f;
