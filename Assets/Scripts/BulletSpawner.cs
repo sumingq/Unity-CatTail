@@ -5,15 +5,13 @@ using UnityEngine;
 public class BulletSpawner : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    public float spawnRateMin = 0.5f;
-    public float spawnRateMax = 5f;
+    public float spawnRateMin = 1f;
+    public float spawnRateMax = 10f;
 
     private Transform target;
     private float spawnRate;
     private float timeAfterSpawn;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         timeAfterSpawn = 0f;
@@ -21,7 +19,6 @@ public class BulletSpawner : MonoBehaviour
         target = FindObjectOfType<PlayerController>().transform;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeAfterSpawn += Time.deltaTime;

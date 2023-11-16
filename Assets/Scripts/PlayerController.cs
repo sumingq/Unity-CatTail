@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,20 +18,15 @@ public class PlayerController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        
-
     }
 
     void Update()
     {
         ControllPlayer();
-      
     }
 
     void ControllPlayer()
     {
-        //float moveHorizontal = Input.GetAxisRaw("Horizontal");
-        //float moveVertical = Input.GetAxisRaw("Vertical");
         float moveHorizontal = joystick.Horizontal;
         float moveVertical = joystick.Vertical;
 
@@ -47,7 +41,6 @@ public class PlayerController : MonoBehaviour
             anim.SetInteger("Walk", 0);
         }
 
-        //transform.Translate(movement * movementSpeed * Time.deltaTime, Space.World);
         Vector3 newPosition = transform.position + movement * movementSpeed * Time.deltaTime;
         newPosition.x = Mathf.Clamp(newPosition.x, -8.5f, 8.5f); // X 좌표 제한
         newPosition.z = Mathf.Clamp(newPosition.z, -8.5f, 8.5f); // Z 좌표 제한
