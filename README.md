@@ -1,5 +1,5 @@
 # Cat Tail
-유니티 2D 닷지게임
+유니티 3D 닷지게임
 <br>
 
 [유튜브 영상 보기](https://youtu.be/rUkIVDkeUjs)
