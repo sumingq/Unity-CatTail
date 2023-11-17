@@ -2,7 +2,7 @@
 유니티 3D 닷지게임
 <br>
 
-[유튜브 영상 보기](https://youtu.be/TlaKxLs6fiA)
+[소개 영상 보기](https://youtu.be/TlaKxLs6fiA)
 <br>
 [구글스토어에서 다운 받기](https://play.google.com/store/apps/details?id=com.GAONGAMES.ShapeRunner)<br><br><br>
 <img width="50%" alt="image (3)" src="https://github.com/sumingq/Unity-CatTail/assets/133943734/43f528d6-2963-481e-8947-9f41e0f1adf7">
